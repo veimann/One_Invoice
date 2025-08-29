@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Invoice Demo</title>
+  </head>
+  <body>
+    <h1>Invoice Demo</h1>
+    <p>JSON endpoint: <a href="./invoice.json">invoice.json</a></p>
+    <pre id="preview">Loading invoice…</pre>
+    <script>
+      fetch('./invoice.json')
+        .then(r => r.json())
+        .then(j => { document.getElementById('preview').textContent = JSON.stringify(j, null, 2); })
+        .catch(e => { document.getElementById('preview').textContent = 'Failed to load invoice.json'; });
+    </script>
+  </body>
+</html>
