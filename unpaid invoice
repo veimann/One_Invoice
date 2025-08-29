@@ -1,0 +1,50 @@
+{
+  "invoice_id": "INV-2025-00456",
+  "customer": {
+    "customer_id": "CUST-45231",
+    "name": "Lars Johansen",
+    "address": "Storgata 12, 0161 Oslo, Norway",
+    "email": "lars.johansen@example.com"
+  },
+  "provider": {
+    "name": "Vattenfall AS",
+    "org_number": "987654321",
+    "address": "Solheimsgaten 23, 5054 Oslo, Norway",
+    "email": "kundeservice@vattenfall.no"
+  },
+  "billing_period": {
+    "start_date": "2025-07-01",
+    "end_date": "2025-07-31"
+  },
+  "issue_date": "2025-08-05",
+  "due_date": "2025-08-20",
+  "amount": {
+    "currency": "NOK",
+    "subtotal": 972.50,
+    "tax": 243.12,
+    "total": 1215.62
+  },
+  "status": "unpaid",
+  "line_items": [
+    {
+      "description": "Strømforbruk (juli 2025)",
+      "quantity": 400,
+      "unit": "kWh",
+      "unit_price": 2.43,
+      "amount": 972.50
+    },
+    {
+      "description": "MVA (25%)",
+      "quantity": 1,
+      "unit": "tax",
+      "unit_price": 243.12,
+      "amount": 243.12
+    }
+  ],
+  "notes": "Vennligst betal innen forfallsdato for å unngå gebyr.",
+  "late_fee_policy": {
+    "grace_period_days": 7,
+    "late_fee_amount": 75.00,
+    "currency": "NOK"
+  }
+}
